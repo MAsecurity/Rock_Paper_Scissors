@@ -44,8 +44,20 @@ function play(player, computer) {
     }else if(player === "rock" && computer === "paper") {
       alert("Computer wins - paper beats rock\n" + "Current score \n"+ "computerWins: " + computerWins++ + "\nplayerWins: " + playerWins);
 
-    }else if(player === "rock" && computer === "paper") {
-      alert("Computer wins - paper beats rock\n" + "Current score \n"+ "computerWins: " + computerWins++ + "\nplayerWins: " + playerWins);
+    }else if(player === "paper" && computer === "rock") {
+      alert("Player wins - paper beats rock\n" + "Current score \n"+ "computerWins: " + computerWins + "\nplayerWins: " + playerWins++);
+
+    }else if(player === "rock" && computer === "scissors") {
+      alert("Player wins - rock beats scissors \n" + "Current score \n"+ "computerWins: " + computerWins + "\nplayerWins: " + playerWins++);
+
+    }else if(player === "scissors" && computer === "rock") {
+      alert("Computer wins - rock beats scissors \n" + "Current score \n"+ "computerWins: " + computerWins++ + "\nplayerWins: " + playerWins);
+
+    }else if(player === "scissors" && computer === "Paper") {
+      alert("Player wins - scissors beats paper \n" + "Current score \n"+ "computerWins: " + computerWins + "\nplayerWins: " + playerWins++);
+
+    }else if(player === "paper" && computer === "scissors") {
+      alert("Computer wins - scissors beats paper \n" + "Current score \n"+ "computerWins: " + computerWins + "\nplayerWins: " + playerWins++);
 
     }
     // Will loop through the function again for 5 times and then will break out of loop
@@ -53,7 +65,21 @@ function play(player, computer) {
 
 
   }
-// Outside the for loop create a new function which calculates the scores out of the 5 rounds and declares the winner
+  
+// Outside the play function create a new function which calculates the scores out of the 5 rounds and declares the winner and call it inside of this function
+  game(playerWins, computerWins);
+  
+}
+
+function game(playerscore, computerscore){
+  if (computerscore > playerscore){
+    alert("Computer won the game");
+  }else if(computerscore < playerscore){
+    alert ("Player won the game");
+  }else {
+    alert("Draw");
+  }
+
 }
 
 
