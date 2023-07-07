@@ -42,17 +42,20 @@ function play(player, computer) {
       alert("Draw\n" + "Current score \n"+ "computerWins: " + computerWins + "\nplayerWins: " + playerWins);
 
     }else if(player === "rock" && computer === "paper") {
-      
+      alert("Computer wins - paper beats rock\n" + "Current score \n"+ "computerWins: " + computerWins++ + "\nplayerWins: " + playerWins);
+
+    }else if(player === "rock" && computer === "paper") {
+      alert("Computer wins - paper beats rock\n" + "Current score \n"+ "computerWins: " + computerWins++ + "\nplayerWins: " + playerWins);
 
     }
+    // Will loop through the function again for 5 times and then will break out of loop
+    return play(playerChoice(), computerChoice());
 
-
-
-
-    
 
   }
+// Outside the for loop create a new function which calculates the scores out of the 5 rounds and declares the winner
 }
+
 
 // Write the function which prompts the user if he wishes to play or not 
 
