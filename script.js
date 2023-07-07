@@ -26,6 +26,3 @@ let playerChoice = () => {
   return result;
 };
 
-
-
-
