@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto, 'sans-serif';
 }
 
 
@@ -36,7 +39,7 @@ body {
 }
 
 .footer, .header {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 
@@ -58,4 +61,15 @@ body {
   color: rgb(223, 221, 221);
   font-style: bold;
 
+
+}
+
+.match {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gameover {
+  opacity: 0;
+  pointer-events: none;
 }
