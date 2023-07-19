@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 34, 68);
+
+}
+
+.header h3,.footer h3 {
+  color: rgb(223, 221, 221);
+  font-style: bold;
+}
+
+
+.footer {
+  margin-top: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 34, 68);
+}
+
+.footer, .header {
+  font-size: 20px;
+}
