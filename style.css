@@ -62,7 +62,7 @@ body {
 }
 
 
-.intro  h1{
+.intro  h1, .winner h1, .gameover h1 {
   color: rgb(63, 63, 63);
   font-weight: bold;
   font-size: 30px;
@@ -77,7 +77,7 @@ body {
   transition: opacity 0.15s ease;
 }
 
-.intro button, .match button {
+.intro button, .match button, .gameover button {
   width: 150px;
   height: 50px;
   font-size: 20px;
@@ -88,13 +88,30 @@ body {
   margin-top: 50px;
   border-radius: 3px;
   transition: 0.15s;
+  
 }
 
-.intro button,.match button:hover {
+.intro button:hover {
   opacity: 0.8;
 }
 
-.intro button, .match button:active {
+.intro button:active {
+  opacity: 0.5
+}
+
+.match button:hover {
+  opacity: 0.8;
+}
+
+.match button:active {
+  opacity: 0.5
+}
+
+.gameover button:hover {
+  opacity: 0.8;
+}
+
+.gameover button:active {
   opacity: 0.5
 }
 
@@ -146,7 +163,7 @@ body {
 }
 
 
-.match {
+.match,.gameover{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
