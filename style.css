@@ -74,27 +74,27 @@ body {
   flex-direction: column;
   align-items: center;
   height:50vh;
-  transition: opacity 0.15s ease 0.5s;
+  transition: opacity 0.15s ease;
 }
 
-.intro button {
+.intro button, .match button {
   width: 150px;
   height: 50px;
   font-size: 20px;
-  /* background-color: rgb(12, 132, 252); */
   background-color: rgb(0, 34, 68);
   color: rgb(223, 221, 221);
   border: none;
   cursor: pointer;
   margin-top: 50px;
   border-radius: 3px;
+  transition: 0.15s;
 }
 
-.intro button:hover {
+.intro button,.match button:hover {
   opacity: 0.8;
 }
 
-.intro button:active {
+.intro button, .match button:active {
   opacity: 0.5
 }
 
@@ -118,6 +118,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  gap: 2px;
 
 
 
@@ -131,6 +132,7 @@ body {
   width: 150px;
   height: 50px;
   font-size: 20px;
+  border-radius: 3px;
 
 }
 
@@ -141,15 +143,23 @@ body {
   border-radius: 3px;
   padding: 5px;
 
-
 }
 
 
 .match {
-  height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 50px;
+  
+}
+
+.hands img {
+  border-radius: 50%;
+  width: 20%;
+}
+.hands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
