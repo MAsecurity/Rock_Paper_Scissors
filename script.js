@@ -42,18 +42,32 @@ function game () {
     })
   })
   }
+
+  function updateScoreBoard () {
+    let score = document.querySelector(".score button");
+    score.textContent = `${playerScore}:${computerScore}`;
+  }
   function compare(Player, Computer){
     let winner = document.querySelector(".winner h1");
     if(Player === Computer) {
       winner.textContent = "It's a draw";
     }else if (Player === 'rock' && Computer === 'scissors') {
       winner.textContent = `Player wins ${Player} beats ${Computer}`;
+      playerScore++;
+      updateScoreBoard();
     }else if (Player === 'paper' && Computer === 'rock') {
       winner.textContent = `Player wins ${Player} beats ${Computer}`;
+      playerScore++;
+      updateScoreBoard();
     }else if (Player === 'scissors' && Computer === 'paper') {
       winner.textContent = `Player wins ${Player} beats ${Computer}`;
+      playerScore++;
+      updateScoreBoard();
     }else {
       winner.textContent = `Computer wins ${Computer} beats ${Player}`;
+      computerScore++;
+      updateScoreBoard();
+
     }
       
     
