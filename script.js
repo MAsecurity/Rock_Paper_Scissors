@@ -32,31 +32,31 @@ function game () {
       //update images
       let playerHand = document.querySelector(".player-hand");
       let computerHand = document.querySelector(".computer-hand");
-      playerHand.src  = `./images/${button.textContent}.png`;
+      playerHand.src  = `./images/${userChoice}.png`;
       computerHand.src = `./images/${computerChoice}.png`;
       //Call the compare function
+      compare(userChoice,computerChoice);
+
+      
 
     })
   })
   }
   function compare(Player, Computer){
     let winner = document.querySelector(".winner h1");
-    if (Player === Computer) {
-      winner.textContent = "It is a draw"
-
+    if(Player === Computer) {
+      winner.textContent = "It's a draw";
+    }else if (Player === 'rock' && Computer === 'scissors') {
+      winner.textContent = `Player wins ${Player} beats ${Computer}`;
+    }else if (Player === 'paper' && Computer === 'rock') {
+      winner.textContent = `Player wins ${Player} beats ${Computer}`;
+    }else if (Player === 'scissors' && Computer === 'paper') {
+      winner.textContent = `Player wins ${Player} beats ${Computer}`;
+    }else {
+      winner.textContent = `Computer wins ${Computer} beats ${Player}`;
     }
-    if (Player === 'rock' && Computer === 'scissors') {
-      winner.textContent = "Player wins";
       
-    }else {
-      winner.textContent = "Computer wins";
-    }
-    if (Player === "scissors"  && Computer === 'Paper') {
-      winner.textContent = "Player wins";
-    }else {
-      winner.textContent = Computer
-
-    }
+    
 
   }
   // Call the inner functions
