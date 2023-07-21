@@ -13,23 +13,35 @@ function game () {
     intro.classList.add("fadeOut");
     match.classList.add("fadeIn");
   });
-  
+
+  //Extract computer picks
+  let computerOptions = ['rock', 'paper', 'scissors'];
+  let computerRandom = Math.floor(Math.random() * 3);
+  // Will return values such as 0,1,2 
+  let computerChoice = computerOptions[computerRandom];
   let buttons = document.querySelectorAll(".option button")
   // Add an event listener for each button
   buttons.forEach( button => {
     button.addEventListener("click", function () {
+      //Extract user picks
       let userChoice = button.textContent;
-      console.log(userChoice);
+
+      //Extract computer picks
+      let computerOptions = ['rock', 'paper', 'scissors'];
+      let computerRandom = Math.floor(Math.random() * 3);
+      // Will return values such as 0,1,2 
+      let computerChoice = computerOptions[computerRandom];
+      console.log(`userChoice ${userChoice} computerChoice ${computerChoice}`);
+      
+
 
 
     })
-
-
   })
   }
+  function compare(Player, Computer){
 
-
-
+  }
   // Call the inner functions
   play();
 }
