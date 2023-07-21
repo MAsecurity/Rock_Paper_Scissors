@@ -4,11 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <script src="./script.js">
-    
-    </script>
-  
+  <div class="header">
+    <h3>Rock paper scissors </h3>
+  </div>
+  <div class="score">
+    <p class="player">
+      Player
+    </p>
+
+    <button class="scorebtn">
+      0:0
+    </button>
+    <p class="computer">
+      Computer
+    </p>
+
+  </div>
+  <div class="middle">
+    <div class="intro">
+    <h1>
+      First to reach a score of 5 wins.
+    </h1>
+    <button>
+      Let's play
+    </button>
+    </div>
+    <div class="match fadeOut ">
+      <div class="winner">
+        <h1>
+          Pick a choice
+        </h1>
+      </div>
+      <div class="hands">
+        <img class="player-hand" src="./images/rock.png" />
+        <img class="computer-hand" src="./images/rock.png" />
+      </div>
+      <div class="option">
+        <button>rock</button>
+        <button>paper</button>
+        <button>scissors</button>
+      </div>
+
+
+    </div>
+    <div class="gameover fadeOut">
+        <h1>
+          Game over
+        </h1>
+        <div id="containerResults">
+
+        </div>
+        <button>
+          Play again &#x21BA;
+        </button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h3>
+      Made by MAsecurity &#128515;
+    </h3>
+
+  </div>
+
+
+
 </body>
 </html>

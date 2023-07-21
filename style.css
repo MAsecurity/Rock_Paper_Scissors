@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, 'sans-serif';
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 34, 68);
+  margin-bottom: 50px;
+
+}
+
+.header h3,.footer h3 {
+  color: rgb(223, 221, 221);
+  font-style: bold;
+}
+
+
+.footer {
+  margin-top: auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 34, 68);
+
+}
+
+.footer, .header {
+  font-size: 20px;
+  min-height: 10vh;
+  
+}
+
+
+.middle {
+  position: relative;
+  
+  
+}
+
+.match,.gameover{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: opacity 0.15s ease 0.5s;
+}
+
+
+.intro  h1, .winner h1, .gameover h1 {
+  color: rgb(63, 63, 63);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.intro{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height:50vh;
+  transition: opacity 0.15s ease;
+}
+
+.intro button, .match button, .gameover button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(0, 34, 68);
+  color: rgb(223, 221, 221);
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+  border-radius: 3px;
+  transition: 0.15s;
+  
+}
+
+.intro button:hover {
+  opacity: 0.8;
+}
+
+.intro button:active {
+  opacity: 0.5
+}
+
+.match button:hover {
+  opacity: 0.8;
+}
+
+.match button:active {
+  opacity: 0.5
+}
+
+.gameover button:hover {
+  opacity: 0.8;
+}
+
+.gameover button:active {
+  opacity: 0.5
+}
+
+
+.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.score {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 2px;
+
+
+
+}
+
+.score button {
+  border: black;
+  border-style: solid;
+  background-color: rgb(108, 253, 108);
+  color: black;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 3px;
+
+}
+
+.score p {
+  font-weight: bold;
+  background-color: rgb(0, 34, 68);
+  color: rgb(223, 221, 221);
+  border-radius: 3px;
+  padding: 5px;
+
+}
+
+
+.match,.gameover{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.hands img {
+  border-radius: 50%;
+  width: 20%;
+}
+.hands {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
