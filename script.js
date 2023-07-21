@@ -13,7 +13,19 @@ function game () {
     intro.classList.add("fadeOut");
     match.classList.add("fadeIn");
   });
+  
+  let buttons = document.querySelectorAll(".option button")
+  // Add an event listener for each button
+  buttons.forEach( button => {
+    button.addEventListener("click", function () {
+      let userChoice = button.textContent;
+      console.log(userChoice);
 
+
+    })
+
+
+  })
   }
 
 
