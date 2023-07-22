@@ -14,11 +14,6 @@ function game () {
       match.classList.add("fadeIn");
   });
 
-    //Extract computer picks
-    let computerOptions = ['rock', 'paper', 'scissors'];
-    let computerRandom = Math.floor(Math.random() * 3);
-    // Will return values such as 0,1,2 
-    let computerChoice = computerOptions[computerRandom];
     let buttons = document.querySelectorAll(".option button")
     // Add an event listener for each button
     buttons.forEach( button => {
